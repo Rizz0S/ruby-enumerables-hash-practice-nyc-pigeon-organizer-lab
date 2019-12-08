@@ -28,10 +28,21 @@ def nyc_pigeon_organizer(data)
 
   names_arr.each do |name|
     inner_h = {}
+
+    #get the colors of the pigeon
     color_value = data[:color].find_all{|color, names| names.include?(name)}.collect{|color, names| color}
     inner_h[:color] = color_value
-    h[name] = inner_h
 
+    #get the gender of the pigeon
+    gender_value = data[:gender].find_all{|gender, names| names.include?(name)}.collect{|gender, names| color}
+    inner_h[:gender] = gender_value
+
+    #get the life of the pigeon
+    lives_value = data[:lives].find_all{|lives, names| names.include?(name)}.collect{|lives, names| color}
+    inner_h[:lives] = lives_value
+
+    #add it all to the hash! yahoo!
+    h[name] = inner_h
   end
 
   pp h
