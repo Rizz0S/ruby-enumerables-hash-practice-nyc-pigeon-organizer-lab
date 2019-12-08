@@ -21,7 +21,7 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
 
 
-  names_arr = data[:color].flat_map {|color, names| names }
+  names_arr = data[:color].flat_map {|color, names| names }.uniq
   puts names_arr
 end
 
