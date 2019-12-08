@@ -20,9 +20,11 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(data)
 
+  h = {}
 
   names_arr = data[:color].flat_map {|color, names| names }.uniq
-  puts names_arr
+
+  data.reduce({}) {memo, |key, value|}
 end
 
 nyc_pigeon_organizer(pigeon_data)
