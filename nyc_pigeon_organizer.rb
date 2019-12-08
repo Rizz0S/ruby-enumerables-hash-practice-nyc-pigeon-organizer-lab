@@ -32,10 +32,9 @@ def nyc_pigeon_organizer(data)
     inner_h[:color] = color_value
     h[name] = inner_h[:color]
 
-    pp h
-
   end
 
+  pp h
 
 end
 
