@@ -30,7 +30,6 @@ def nyc_pigeon_organizer(data)
 
   end
 
-  data.reduce({}) {memo, |key, value|}
 end
 
 nyc_pigeon_organizer(pigeon_data)
