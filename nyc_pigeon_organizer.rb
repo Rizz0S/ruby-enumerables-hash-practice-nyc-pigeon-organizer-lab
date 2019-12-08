@@ -1,3 +1,6 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+
+
+  names_arr = data[:color].each_value.flatmap {|names|}
+
 end
