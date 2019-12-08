@@ -25,5 +25,5 @@ def nyc_pigeon_organizer(data)
     #add it all to the hash! yahoo!
     h[name] = inner_h
   end
-
+  h
 end
