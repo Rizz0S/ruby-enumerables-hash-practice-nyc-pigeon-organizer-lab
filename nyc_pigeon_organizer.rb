@@ -1,3 +1,5 @@
+require 'pp'
+
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -29,6 +31,7 @@ def nyc_pigeon_organizer(data)
     color_value = data[:color].find_all{|color, names| names.include?(name)}.collect{|color, names| color}
     inner_h[:color] = color_value
     h[name] = inner_h[:color]
+
   end
 
 
