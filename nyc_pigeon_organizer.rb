@@ -28,6 +28,9 @@ def nyc_pigeon_organizer(data)
     inner_h = {}
     color_value = data[:color].find_all{|color, names| names.include?(name)}.collect{|color, names| color}
     inner_h[:color] = color_value
+    puts "---"
+    puts inner_h
+    puts "---"
   end
 
 end
