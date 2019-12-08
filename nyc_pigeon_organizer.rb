@@ -26,7 +26,8 @@ def nyc_pigeon_organizer(data)
 
   names_arr.each do |name|
     inner_h = {}
-    data[:color].find_all{|color, names| names.include?(name) }
+    puts data[:color].find_all{|color, names| names.include?(name) }
+
   end
 
   data.reduce({}) {memo, |key, value|}
