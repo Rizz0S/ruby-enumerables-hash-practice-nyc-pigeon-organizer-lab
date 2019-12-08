@@ -26,8 +26,6 @@ def nyc_pigeon_organizer(data)
     h[name] = inner_h
   end
 
-  pp h
-
 end
 
 nyc_pigeon_organizer(pigeon_data)
